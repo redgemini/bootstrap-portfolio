@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="reset" type="text/css" href="assets/css/reset.css">
     <title>Wendy Kiddy</title>
@@ -14,31 +15,89 @@
   <body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      
-      <header>
-        
-            <h1>Wendy Kiddy</h1>
-        
-        </header>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-        <nav class="nav justify-content-end">
-                <a class="nav-link active" href="index.html">About</a>
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-        </nav>
     
-        <article><div class="container">
-                <div class="row">
-                  <div class="col-md-8">
-                    <div class="page-header">
-                      <h1>Contact</h1>
-                    </div>
-                  </div>
-                </div>
+    <header>
+      <!--Bootstrap Navbar with Toggle - Button Removed-->
+        <div class="navbar-header">
+          <div class="row">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="collapse navbar-collapse"></div>
+              <a class="navbar-brand" "masterhead">Wendy Kiddy</a>
+          
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
             </div>
+            </nav>
+        </div>
+    </header>
+      
+    <div id="main-container" class="container">
+    <section class="main-section">
+      <div class="row">
+        <div class="col-sm-12">
 
-        </body>
-        </html>
+      <!--Bootstrap Form with Submit Button-->
+            <form>
+              <h1 class: "contact-header">Contact</h1>
+              <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">          
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label> <br>
+                  <input type="name" class="form-control" id="exampleName" aria-describedby="Namep" placeholder="John Smith">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputPassword1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="example@gmail.com">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputMessage">Message</label>
+                  <input type="message" class="form-control" id="exampleInputPassword1" placeholder="Message">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </div>  
+      </div>  
+  </div>  
+</form>     
+      </section>  
+        </div>
+        <section class="sidebar">
+            <div id="connect">
+              <h2>Connect with Me</h2>
+              <a href="https://github.com/redgemini"><img src="assets/images/github.png" class="social" alt="GitHub" /></a>
+              <a href="https://www.linkedin.com/in/wendy-kiddy-leed-green-associate-41481911/"><img src="assets/images/linkedin.png" 
+                  class="social" alt="LinkedIn" /></a>
+              <a href="https://stackoverflow.com/users/9306787/redgemini?tab=profile"><img src="assets/images/stack-overflow.png" 
+                  class="social" alt="Stack Overflow" /></a>
+            </div>
+          </section>
+          <!--Bootstrap Footer-->
+        <footer>
+          <div class="container" class="footer">
+                  </div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <p>&#64;Copyright 2018 Wendy Kiddy</p>
+                    </blockquote>
+                  </div>
+              
+     </footer>
+  </body>
+  </html>
+          
